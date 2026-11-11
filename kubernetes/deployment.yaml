@@ -15,7 +15,8 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-app
-        image: basamapp:v1
-        ports:
-        - containerPort: 5000
+       - name: flask-app
+         image: basamapp:v1
+         imagePullPolicy: IfNotPresent
+         ports:
+         - containerPort: 5000
